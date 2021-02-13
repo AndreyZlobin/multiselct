@@ -2,6 +2,8 @@
 
 So simple plugin to use, just create a class instance and pass parameters
 
+![Alt Text](record.gif)
+
 ## Installation
 
 Use the package manager [multiselect](https://www.npmjs.com/package/great_multiselect) to install foobar.
