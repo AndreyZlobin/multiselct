@@ -1,0 +1,135 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.multiselect {
+  position: relative;
+  box-sizing: content-box;
+  display: block;
+  min-width: 400px;
+  width: auto;
+}
+
+.multiselect__tags {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+}
+
+.multiselect_input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.multiselect__tag {
+  position: relative;
+  display: flex;
+  padding: 4px 26px 4px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #fff;
+  line-height: 1;
+  background: #41b883;
+  white-space: nowrap;
+}
+.multiselect__tags__wrapper {
+  display: flex;
+  align-items: center;
+}
+.multiselect__options {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: auto;
+  margin: 0;
+  padding: 20px 8px;
+  font-size: 16px;
+  opacity: 1;
+  transition: all 0.3s ease-out;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+}
+
+.multiselect__option, li {
+  margin-bottom: 4px;
+  text-decoration: none;
+  list-style-type: none;
+  cursor: pointer;
+}
+.multiselect__option:hover {
+  background: gray;
+}
+.multiselect__option:last-child {
+  margin-bottom: 0;
+}
+
+.multiselect__input,
+.multiselect__field {
+  position: relative;
+  display: inline-block;
+  min-height: 20px;
+  line-height: 20px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  padding: 1px 0 0 5px;
+  width: 100%;
+  transition: border 0.1s ease;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+.multiselect__tag-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 7px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-weight: 700;
+  font-style: normal;
+  width: 22px;
+  text-align: center;
+  line-height: 22px;
+  transition: all 0.2s ease;
+  border-radius: 5px;
+}
+.multiselect__tag-icon:hover {
+  background: gray;
+}
+.multiselect__tag-icon:after {
+  content: "\D7";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #266d4d;
+  font-size: 14px;
+}
+.options--show {
+  height: 0;
+  opacity: 0;
+  font-size: 0;
+}
+.multiselect__options-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}

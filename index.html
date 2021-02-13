@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="multiselect" id="multiselect"></div>
+      <button
+        onClick=" document.querySelector('#result').innerHTML = ``; document.querySelector('#result').insertAdjacentHTML('afterbegin', window.select.getValues().map((select) => (`<li>${select.name}</li>`)).join('\n'))   "
+      >
+        Get selected values
+      </button>
+      <button onClick="console.log(window.select.destroy())">
+        Destroy multi select :(
+      </button>
+      <div id="result"></div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
