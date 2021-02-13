@@ -1,20 +1,21 @@
 {
-  "name": "multiselect",
-  "version": "1.0.0",
-  "description": "multiselct on pure javaScript ",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "great_multiselect",
+  "version": "1.0.1",
+  "description": "multi-select on pure javaScript",
   "repository": {
     "type": "git",
-    "url": "e"
+    "url": "https://github.com/AndreyZlobin/multiselct/tree/master"
   },
+  "files": [
+    "lib/index.js"
+  ],
   "keywords": [
     "javaScript",
     "js",
-    "select"
+    "select",
+    "select-plugin"
   ],
   "author": "ZlobinAndy",
-  "license": "ISC"
+  "license": "MIT",
+  "main": "lib"
 }
